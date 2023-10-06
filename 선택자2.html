@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        li:first-child{
+            color: blueviolet;
+        }
+
+        li:last-child {
+            color: brown;
+        }
+
+        /* 부모의 모든 자식 요소 중 n번째 자식 요소가 맞으면 선택 */
+        p:nth-child(1) {
+            color: blueviolet;
+            font-size: 1.2em;
+
+        }
+        /*부모 요소의 자식 요소 중 n번재로 등장하는 요소 선택 */
+        p:nth-of-type(2) {
+            color: brown;
+            font-size: 1.5em;
+        }
+
+
+    </Style>
+</head>
+<body>
+    <!-- 구조적 가상 클래스 선택자 : 요소의 부모, 자식, 형제 인접 요소를 기준으로 스타일을 적용-->
+
+   <!-- <ul>
+    <li>test 1</li>
+    <li>test 2</li>
+    <li>test 3</li>
+    <li>test 4</li>
+    <li>test 5</li>
+   </ul> -->
+
+   <p>우라칸</p>
+   <div>
+    <p>아벤타도르</p>
+    <span>페라리</span>
+    <p>벤츠c클래스</p>
+   </div>
+
+   <div>
+    <p>마칸</p>
+    <span>레인지오버</span>
+    <p>bmw 5시리즈</p>
+   </div>
+</body>
+</html>
